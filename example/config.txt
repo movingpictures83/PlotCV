@@ -1,0 +1,2 @@
+Prefix plugins/PlotCV/example/
+Plugin PlotCV inputfile parameters.plotcv.txt outputfile CV.pdf
