@@ -22,5 +22,6 @@ output <- function(outputfile) {
 	d_qc <- readRDS(paste(pfix, parameters["data", 2], sep="/"))
 	measure <- parameters["measure", 2]
 	plot_molecules(d_qc, "sd", measure = measure, log = FALSE)
+	write.csv(d_qc$rowData, paste(outputfile, "csv", sep="."))
 }
 
